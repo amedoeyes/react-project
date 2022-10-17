@@ -1,7 +1,7 @@
-export default function () {
+export default function Home() {
 	return (
 		<section className="homeSection" id="home">
-			<h1>{"<O>"}</h1>
+			<h1>&lt;O&gt;</h1>
 		</section>
 	);
 }

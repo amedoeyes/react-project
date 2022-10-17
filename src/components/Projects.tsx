@@ -20,7 +20,7 @@ export default function Projects() {
 			<>
 				<div className="dim" style={isVisible} onClick={handleClick}></div>
 				<div className="projectPanel" style={isVisible}>
-					<img src={props.img} />
+					<img alt="" src={props.img} />
 					<h1>{props.name}</h1>
 					<p>{props.description}</p>
 				</div>
@@ -49,7 +49,7 @@ export default function Projects() {
 
 		return (
 			<div className="projectCard" onClick={handleClick}>
-				<img src={props.img} />
+				<img alt="" src={props.img} />
 				<p>{props.name}</p>
 			</div>
 		);
@@ -57,7 +57,7 @@ export default function Projects() {
 	const [headerHeight, setHeaderHeight] = useState(0);
 	useEffect(() => {
 		setHeaderHeight(document.querySelector("header").clientHeight - 1);
-	});
+	}, []);
 
 	return (
 		<section
