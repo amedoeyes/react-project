@@ -28,7 +28,7 @@ export default function Header() {
 				<ul>
 					<li
 						onClick={() => {
-							scrollIntoView(".projectsScetion");
+							scrollIntoView(".projectsSection");
 						}}
 					>
 						PROJECTS
